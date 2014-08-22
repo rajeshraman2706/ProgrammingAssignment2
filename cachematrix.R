@@ -15,7 +15,8 @@ makeCacheMatrix <- function( x = matrix() )
 	list( set=set, get=get, setInverse=setInverse, getInverse=getInverse )
 }
 
-## This function calculates the inverted matrix if it is present in the memory.  If not, it calculates and returns.
+## This function returns the inverted matrix if it is present in the cache/memory.  
+## If not, it calculates and returns.
 
 cacheSolve <- function( x, ... )
 {
